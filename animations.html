@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .my-btn {
+            border: 1px solid rebeccapurple;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: white;
+            color: rebeccapurple;
+            transition: 500ms;
+        }
+
+        .my-btn:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .my-btn:active {
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.438);
+        }
+
+        .my-spinner {
+            transition: 1s;
+        }
+
+        .my-spinner:hover {
+            transform: rotate(360deg);
+        }
+
+        .my-img {
+            transition: 300ms;
+            width: 200px;
+        }
+
+        .scale1:hover {
+            transform: scaleX(2);
+        }
+
+        .scale2:hover {
+            transform: scaleY(2);
+        }
+
+        .scale3:hover {
+            transform: scale(2);
+        }
+
+        .translate1:hover {
+            transform: translateX(-30px);
+        }
+
+        .translate2:hover {
+            transform: translateY(30px);
+        }
+
+        .translate3:hover {
+            transform: translate(30px, -30px);
+        }
+
+        .skew1:hover {
+            transform: skewX(30deg);
+        }
+
+        .skew2:hover {
+            transform: skewY(30deg);
+        }
+
+        .skew3:hover {
+            transform: skew(30deg, -30deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Animations Classes</h1>
+    <hr>
+
+    <button class="my-btn">Hello There</button>
+    <br>
+    <h2>Rotate CSS Property Example</h2>
+    <img class="my-spinner" src="react.jpeg" alt="">
+
+    <h2 style="margin-top: 50px;">Scale CSS Property Example</h2>
+    <img class="scale1 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+    <img class="scale2 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+    <img class="scale3 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+
+    <h2 style="margin-top: 50px;">Translate CSS Property Example</h2>
+    <img class="translate1 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+    <img class="translate2 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+    <img class="translate3 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+
+    <h2 style="margin-top: 50px;">Skew CSS Property Example</h2>
+    <img class="skew1 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+    <img class="skew2 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+    <img class="skew3 my-img" src="https://www.pngitem.com/pimgs/m/545-5456060_spongebob-png-transparent-png.png"
+        alt="">
+
+</body>
+
+</html>

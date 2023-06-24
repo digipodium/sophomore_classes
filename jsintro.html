@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript</title>
+</head>
+
+<body>
+
+    <button id="my-btn" onclick=" console.log('Button was Clicked!!') ">My Button</button>
+
+    <button onclick=" alert(' You Clicked that button, now wait and watch!! ') "> Don't Click </button>
+
+    <button onclick=" prompt(' Are you going to Party?? ') "> Click </button>
+
+    <button id="cond-btn"> Using Conditions </button>
+
+    <h1 id="my-heading">JavaScript is the most popular programming language</h1>
+
+    <h2 id="result">Click here to see Magic!!</h2>
+
+    <script>
+
+        jsbutton = document.querySelector('#my-btn');
+
+        console.log(jsbutton);
+
+        heading = document.querySelector('#my-heading');
+
+        console.log(heading);
+
+        console.log(heading.innerHTML);
+
+        document.querySelector("#cond-btn").addEventListener('click', (e) => {
+            answer = prompt("Are you going to the Party??");
+
+            if (answer == 'Yes') {
+                alert("Yay!");
+            } else if (answer == 'No') {
+                alert("So sad! you will miss the party!!");
+            }
+
+        })
+
+        document.querySelector('#result').addEventListener('click', (e) => {
+            e.target.innerHTML = "How was the Magic??";
+        });
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

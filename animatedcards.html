@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Grechen+Fuemen:regular" rel="stylesheet" />
+
+    <style>
+        * {
+            font-family: Grechen Fuemen;
+        }
+
+        .my-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 150px;
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .my-card {
+            background-color: rgb(29, 29, 29);
+            margin-left: -100px;
+            transition: 500ms;
+            box-shadow: -5px 2px 5px 1px rgba(0, 0, 0, 0.329);
+            border-radius: 10px;
+        }
+
+        .my-card:hover {
+            transform: rotate(5deg) translate(-50px, -50px);
+            box-shadow: 5px 30px 30px 10px rgba(0, 0, 0, 0.418);
+        }
+
+        .my-card p {
+            color: white;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .my-input {
+            display: block;
+            padding: 20px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.336);
+            margin: 50px auto;
+            width: 50%;
+            font-size: 30px;
+            outline: none;
+        }
+
+        .title {
+            font-size: 30px;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="title">Animated Cards Example</h1>
+    <input class="my-input" placeholder="Enter Game Name">
+
+    <div class="my-row">
+        <div class="my-card">
+            <img class="card-img"
+                src="https://www.mobygames.com/images/covers/l/62148-resident-evil-4-gamecube-front-cover.jpg" alt="">
+            <div class="my-card-body">
+                <p>Resident Evil 4</p>
+            </div>
+        </div>
+        <div class="my-card">
+            <img class="card-img"
+                src="https://www.mobygames.com/images/covers/l/62148-resident-evil-4-gamecube-front-cover.jpg" alt="">
+            <div class="my-card-body">
+                <p>Resident Evil 4</p>
+            </div>
+        </div>
+        <div class="my-card">
+            <img class="card-img"
+                src="https://www.mobygames.com/images/covers/l/62148-resident-evil-4-gamecube-front-cover.jpg" alt="">
+            <div class="my-card-body">
+                <p class="card-title">Resident Evil 4</p>
+            </div>
+        </div>
+        <div class="my-card">
+            <img class="card-img"
+                src="https://www.mobygames.com/images/covers/l/62148-resident-evil-4-gamecube-front-cover.jpg" alt="">
+            <div class="my-card-body">
+                <p class="card-title">Resident Evil 4</p>
+            </div>
+        </div>
+        <div class="my-card">
+            <img class="card-img"
+                src="https://www.mobygames.com/images/covers/l/62148-resident-evil-4-gamecube-front-cover.jpg" alt="">
+            <div class="my-card-body">
+                <p class="card-title">Resident Evil 4</p>
+            </div>
+        </div>
+        <div class="my-card">
+            <img class="card-img"
+                src="https://www.mobygames.com/images/covers/l/62148-resident-evil-4-gamecube-front-cover.jpg" alt="">
+            <div class="my-card-body">
+                <p class="card-title">Resident Evil 4</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

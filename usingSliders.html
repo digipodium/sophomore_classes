@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: fit-content;
+        }
+
+        .swiper-slide {
+            height: 500px;
+            background-color: rgb(113, 24, 255);
+            color: white;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        .slide1 {
+            background-color: orange;
+        }
+
+        .slide2 {
+            background-color: aqua;
+        }
+
+        .slide3 {
+            background-color: brown;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="swiper myslider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide1">
+                <h1>Slide 1</h1>
+            </div>
+
+            <div class="swiper-slide slide2">
+                <h1>Slide 2</h1>
+            </div>
+
+            <div class="swiper-slide slide3">
+                <h1>Slide 3</h1>
+            </div>
+
+            <div class="swiper-slide slide4">
+                <h1>Slide 4</h1>
+            </div>
+
+            <div class="swiper-slide slide5">
+                <h1>Slide 5</h1>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        slider = new Swiper('.myslider', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="leon">Leon</button>
+    <button id="ada">Ada</button>
+
+    <h2 id="res"></h2>
+
+
+    <script>
+        document.querySelector('#leon').addEventListener('click', (e) => {
+            document.querySelector('#res').innerHTML = 'Hello! this is Leon, How are you?';
+        })
+
+        document.querySelector('#ada').addEventListener('click', (e) => {
+            document.querySelector('#res').innerHTML = 'Hello! this is Ada, How are you?';
+        })
+    </script>
+
+</body>
+
+</html>
